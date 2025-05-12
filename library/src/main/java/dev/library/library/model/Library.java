@@ -19,4 +19,7 @@ public class Library {
     private int anoPublicacao;
     private int numeroPaginas;
 
+    @ManyToOne(cascade = CascadeType.ALL)
+    private Escritor escritor;
+
 }
